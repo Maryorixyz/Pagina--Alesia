@@ -118,23 +118,34 @@
         </div>
       </section>
 
-      <section class="info">
+      <!-- <section class="info">
         <div class="info-div">
           <img src="/Imagenes/Happy.svg" alt="">
           <p>Servicio autorizado por la <span>SUNAT</span> para emitir documentos electrónicos, trabajamos con desarrolladores de software
             y empresas que necesitan ahorrar tiempo y recursos.</p>
         </div>
+      </section> -->
+      <section id="particle-pr">
+        <div id="particles-js">
+          <div class="pasrticle-info">
+            <img src="/Imagenes/Happy.svg" alt="">
+            <p>Servicio autorizado por la <span>SUNAT</span> para emitir documentos electrónicos, trabajamos con desarrolladores de software
+              y empresas que necesitan ahorrar tiempo y recursos.</p>
+          </div>
+        </div>
       </section>
 
+      
       <!-- BODY -->
       <section class="multi-info">
-        <h2>Multidispositivos</h2>
-        <div class="multi-img">
-          <img src="/Imagenes/compu.png" alt="">
+      <h2>Multidispositivos</h2>
+      <div class="multi-img" >
+        <img src="/Imagenes/compu.png" alt="">
           <img src="/Imagenes/phone.png" alt="">
           <img src="/Imagenes/laptop.png" alt="">
         </div>
       </section>
+
       
       <!-- SECTION -->
 
@@ -261,7 +272,7 @@
         </div>
         <div>
         <div class="contact">
-          <h3>Contactanos</h3>
+          <h3>Contáctanos</h3>
           <div class="contact-grd">
             <div class="contact-des">
               <img src="/Imagenes/ubi.svg" alt="">
@@ -307,24 +318,166 @@
 
       <footer>
         <div class="footer-pr">
-          <div>
-            <img src="/Imagenes/logo.png" alt="">
-          </div>
-          <div>
-            <p>Servicio autorizado por la SUNAT para emitir documentos electrónicos, trabajamos con desarrolladores de software y
-              empresas que necesitan ahorrar tiempo y recursos.</p>
-            <p>Línea Directa</p>
-            <p>062-612737</p>
-            <p>Email</p>
-            <p>Síguenos</p>
+          <div class="grupo-1">
+            <div class="box">
+              <figure>
+                <img src="/Imagenes/logo2.svg" alt="">
+              </figure>
+            </div>
+            <div class="box">
+              <h3>Nosotros</h3>
+              <p>Servicio autorizado por la SUNAT para emitir documentos electrónicos, trabajamos con desarrolladores de software y
+                empresas que necesitan ahorrar tiempo y recursos.</p>
+            </div>
+            <div class="box">
+              <h3>Línea Directa</h3>
+              <p>062-612737</p>
+              <h3>Email</h3>
+              <p>alesiafacturacion@gmail.com</p>
+            </div>
+            <div class="box">
+              <h3>Síguenos</h3>
+              <div class="red-social">
+                <a href="https://colorhunt.co/palettes/grey" target="_blank">
+                  <img src="/Imagenes/ic_baseline-facebook.svg" alt="">
+                </a>
+                <a href="red-social">
+                  <img src="/Imagenes/ri_instagram-fill.svg" alt="">
+                </a>
+                <a href="red-social">
+                  <img src="/Imagenes/mdi_youtube.svg" alt="">
+                </a>
+                <a href="red-social">
+                  <img src="/Imagenes/mingcute_tiktok-fill.svg" alt="">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+          <div class="grupo-2">
+            <small>&copy; 2023 <b> - Alesia Facturacion - </b>Todos los Derechos Reservados. </small>
+          </div>
       </footer>
 
 <!-- JS -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="particles.min.js"></script>
+<script>
+  particlesJS(
+    {
+  "particles": {
+    "number": {
+      "value": 109,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#fafafa"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+  )
+</script>
 <script src="/script.js"></script>
 </body>
 </html>
