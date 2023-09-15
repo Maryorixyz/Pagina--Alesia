@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+body{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+}
+
+
+.container {
+  text-align: center;
+  /* width: 1100px;
+  height: 60%; */
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h1.title {
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-switch{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-switch span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.toggler{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(75deg, #008FFC,#7468FF, #00EA13);
+    border-radius: 25px;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.toggler::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+    right:4px;
+}
+
+.toggler:checked:before{
+    right: 55%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.card-color {
+    background: linear-gradient(75deg, #008FFC,#7468FF);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+.card-plan {
+    padding: 2rem;
+}
+.card-plan ul li {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card{
+   height: 743px;
+   width: 32%;
+   background-color: #f5f5f5;
+   /* border: 3px solid #191b1d; */
+   border-radius: 15px;
+   /* padding: 2rem; */
+   text-align: center;
+}
+
+.recomendado {
+    color: yellow;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.card-price{
+    font-size: 3.2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2>span{
+    font-size: 1.2rem;
+}
+
+
+.card .card-price{
+    margin-bottom: 2rem;
+}
+.card ul{
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 40px
+}
+
+.card ul li:before{
+    content:"•";
+    margin-right: 0.5rem;
+    color:#211ebc;
+    font-size: 1.5rem;
+}
+
+.card ul li{
+    margin-bottom: 0.5rem;
+}
+
+
+
+.card-btn{
+    margin-top: 1rem;
+    width: 100%;
+    background: #211ebc;
+    border: 0.5px solid #ffffff;
+    color:white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.card .card-btn:hover,
+.active .card-btn
+{
+   
+    background: linear-gradient(75deg, #008FFC,#7468FF, #00EA13);
+}
+
+
+@media (max-width:1112px){
+    .cards{
+        justify-content: center;
+    }
+
+    .card{
+        width: 40%;
+    margin: 2rem;
+    }
+}
+
+@media (max-width:848px){
+    .card{
+        width:50%
+    }
+}
+
+@media (max-width:674px){
+    .top-banner{
+        width: 70%;
+    }
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width:500px){
+    .top-banner{
+        width: 90%;
+    }
+
+
+
+    .card{
+        width: 90%;
+    }
+}
+
+    </style>
+    <title>Pricing Table</title>
+</head>
+<body>
+
+    <section class="container">
+      <h1 class="title">Planes de Servicio</h1>
+      <div class="toggle-switch">
+            <span>Anual </span>
+            <input type="checkbox" class="toggler">
+            <span>Mensual</span>
+      </div>
+      <section class="cards">
+        <!-- Starter Plan -->
+          <div class="card">
+            <div class="card-color">
+                <h1 class="card-title">Emprendedor</h1>
+                <h2 class="card-price" id="starter-price"> S/.30 <span> / mes</span> </h2>
+            </div>
+            <div class="card-plan">
+                <ul>
+                    <li> Emisión de Facturas, Boletas, Notas de Crédito y Debito.</li>
+                    <li> Notas de venta</li>
+                    <li>Gestión de inventario</li>
+                    <li>(1) usuario</li>
+                    <li>(1) almacén</li>
+                    <li>(200) comprobantes</li>
+                    <li>Soporte estándar</li>
+                </ul>
+                <a href="#" class="card-btn">
+                    Empieza ahora
+                </a>
+                <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+            </div>
+          </div>
+
+          <div class="card active">
+            <div class="card-color">
+                <h1 class="card-title">Emprendedor</h1>
+                <h2 class="card-price" id="pro-price"> S/.60 <span> / mes</span> </h2>
+                <h2 class="recomendado"> RECOMENDADO </h2>
+            </div>
+            <div class="card-plan">
+                <ul>
+                    <li> Emisión de Facturas, Boletas, Notas de Crédito y Debito.</li>
+                <li> Notas de venta</li>
+                <li>Gestión de inventario</li>
+                <li> Gestion de usuarios </li>
+                <li> Usuarios Ilimitados</li>
+                <li>(2) almacenes</li>
+                <li>Comprobantes ilimtados</li>
+                <li>Guia de remision</li>
+                <li>Gestión de compras</li>
+                <li>Y más</li>
+                </ul>
+                <a href="#" class="card-btn">
+                    Empieza ahora
+                </a>
+                <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-color">
+                <h1 class="card-title">Emprendedor</h1>
+                <h2 class="card-price" id="empre-price"> S/.80 <span> / mes</span> </h2>
+            </div>
+            <div class="card-plan">
+                <ul>
+                    <li> PLAN STANDAR</li>
+                <li> Tienda Virtual</li>
+                <li> Aplicativo Movil</li>
+                <li> Usuarios ilimitados</li>
+                <li> (5) almacenes</li>
+                <li>Generador de pagos</li>
+                <li>POS</li>
+                <li>Valorizacion de inventarios</li>
+                <li>Reportes detallados</li>
+                <li>Mas de 50 reportes</li>
+                </ul>
+                <a href="#" class="card-btn">
+                    Empieza ahora
+                </a>
+                <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+            </div>
+          </div>
+        
+
+
+          <!-- <div class="card active">
+            <h1 class="card-title">Emprendedor</h1>
+            <h2 class="card-price" id="pro-price"> S/.60 <span> / mes</span> </h2>
+            <ul class="card-plan">
+                <li> Emisión de Facturas, Boletas, Notas de Crédito y Debito.</li>
+                <li> Notas de venta</li>
+                <li>Gestión de inventario</li>
+                <li> Gestion de usuarios </li>
+                <li> Usuarios Ilimitados</li>
+                <li>(2) almacenes</li>
+                <li>Comprobantes ilimtados</li>
+                <li>Guia de remision</li>
+                <li>Gestión de compras</li>
+                <li>Y más</li>
+            </ul>
+            <button type="button" class="card-btn"> Empieza ahora</button>
+          </div> -->
+
+          <!-- <div class="card">
+            <h1 class="card-title">Emprendedor</h1>
+            <h2 class="card-price" id="empre-price"> S/.80 <span> / mes</span> </h2>
+            <ul class="card-plan">
+                <li> PLAN STANDAR</li>
+                <li> Tienda Virtual</li>
+                <li> Aplicativo Movil</li>
+                <li> Usuarios ilimitados</li>
+                <li> (5) almacenes</li>
+                <li>Generador de pagos</li>
+                <li>POS</li>
+                <li>Valorizacion de inventarios</li>
+                <li>Reportes detallados</li>
+                <li>Mas de 50 reportes</li>
+            </ul>
+            <button type="button" class="card-btn"> Empieza ahora</button>
+          </div> -->
+        </section>
+    </section>
+    <script src="main.js"></script>
+    <script>
+        const toggler = document.querySelector(".toggler");
+const starterPrice = document.getElementById("starter-price");
+// const starterPrice1 = document.getElementById("starter-price1");
+
+const proPrice = document.getElementById("pro-price");
+const emprePrice = document.getElementById("empre-price");
+
+
+toggler.addEventListener("change", ()=>{
+    if(toggler.checked){
+        starterPrice.innerHTML = `S/.300 <span> / año </span>`;
+        // starterPrice1.innerHTML = `S/.300 <span> / año </span>`;
+        proPrice.innerHTML = `S/.600 <span> / año </span>`;
+        emprePrice.innerHTML = `S/.800 <span> / año </span>`;
+
+    }else{
+        starterPrice.innerHTML = `S/.30 <span> / mes </span>`;
+        // starterPrice1.innerHTML = `S/.30 <span> / mes </span>`;
+
+        proPrice.innerHTML = `S/.60 <span> / mes </span>`;
+        emprePrice.innerHTML = `S/.80 <span> / mes </span>`;
+
+    }
+})
+    </script>
+</body>
+</html>

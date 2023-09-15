@@ -160,86 +160,92 @@
 
   <!-- SECTION -->
 
-  <section class="service">
-    <h4>planes de servicio</h4>
-
-    <div class="service-grid">
-      <div class="service-div">
-        <div class="service-back">
-          <div class="service-back-sup">
-            <h3>emprendedor</h3>
-            <p><sup>S/.</sup>30<span>/MES</span></p>
-          </div>
-        </div>
-        <div class="service-info">
-          <ul>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Emisión de Facturas, Boletas, Notas de Crédito y
-              Debito.</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Notas de venta</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Gestión de inventario</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">(1) usuario</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">(1) almacén</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">(200) comprobantes</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Soporte estándar</li>
-          </ul>
-        </div>
-        <div class="service-btn">
-          <a href="#" class="btn-1">EMPIEZA AHORA</a>
-        </div>
-
-      </div>
-      <div class="service-div">
-        <div class="service-back">
-          <div class="service-back-sup">
-            <h3>empresario</h3>
-            <p><sup>S/.</sup>60<span>/MES</span></p>
-          </div>
-        </div>
-        <div class="service-info">
-          <ul>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Emisión de Facturas, Boletas, Notas de Crédito y
-              Debito.</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Notas de venta</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Gestión de inventario</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Usuarios Ilimitados</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">(2) almacenes</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Comprobantes ilimtados</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Guia de remision</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Gestión de compras</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Y más</li>
-          </ul>
-        </div>
-        <div class="service-btn">
-          <a href="#" class="btn-1">EMPIEZA AHORA</a>
-        </div>
-      </div>
-      <div class="service-div">
-        <div class="service-back">
-          <div class="service-back-sup">
-            <h3>ejecutivo</h3>
-            <p><sup>S/.</sup>80<span>/MES</span></p>
-          </div>
-        </div>
-        <div class="service-info">
-          <ul>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">PLAN STANDAR</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Tienda Virtual</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Aplicativo Movil</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Usuarios ilimitados</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">(5) almacenes</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Generador de pagos</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">POS</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Valorizacion de inventarios</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Reportes detallados</li>
-            <li> <img src="/Imagenes/Checked Checkbox.svg" alt="">Mas de 50 reportes</li>
-          </ul>
-        </div>
-        <div class="service-btn">
-          <a href="#" class="btn-1">EMPIEZA AHORA</a>
-        </div>
-      </div>
+  <section class="container sec-2 show-animate">
+    <h1 class="title animate">Planes de Servicio</h1>
+    <div class="toggle-switch animate">
+          <span>Anual </span>
+          <input type="checkbox" class="toggler">
+          <span>Mensual</span>
     </div>
+    <section class="cards animate">
+      <!-- Starter Plan -->
+        <div class="card animate">
+          <div class="card-color">
+              <h1 class="card-title">Emprendedor</h1>
+              <h2 class="card-price" id="starter-price"> S/.30 <span> / mes</span> </h2>
+          </div>
+          <div class="card-plan">
+              <ul>
+                  <li> Emisión de Facturas, Boletas, Notas de Crédito y Debito.</li>
+                  <li> Notas de venta</li>
+                  <li>Gestión de inventario</li>
+                  <li>(1) usuario</li>
+                  <li>(1) almacén</li>
+                  <li>(200) comprobantes</li>
+                  <li>Soporte estándar</li>
+              </ul>
+              <a href="#" class="card-btn">
+                  Empieza ahora
+              </a>
+              <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+          </div>
+        </div>
+
+        <div class="card active animate">
+          <div class="card-color">
+              <h1 class="card-title">Empresario</h1>
+              <h2 class="card-price" id="pro-price"> S/.60 <span> / mes</span> </h2>
+              <!-- <h2 class="recomendado"> RECOMENDADO </h2> -->
+          </div>
+          <div class="card-plan">
+              <ul>
+                  <li> Emisión de Facturas, Boletas, Notas de Crédito y Debito.</li>
+              <li> Notas de venta</li>
+              <li>Gestión de inventario</li>
+              <li> Gestion de usuarios </li>
+              <li> Usuarios Ilimitados</li>
+              <li>(2) almacenes</li>
+              <li>Comprobantes ilimtados</li>
+              <li>Guia de remision</li>
+              <li>Gestión de compras</li>
+              <li>Y más</li>
+              </ul>
+              <a href="#" class="card-btn">
+                  Empieza ahora
+              </a>
+              <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+          </div>
+        </div>
+
+        <div class="card animate">
+          <div class="card-color">
+              <h1 class="card-title">Ejecutivo</h1>
+              <h2 class="card-price" id="empre-price"> S/.80 <span> / mes</span> </h2>
+          </div>
+          <div class="card-plan">
+              <ul>
+                  <li> PLAN STANDAR</li>
+              <li> Tienda Virtual</li>
+              <li> Aplicativo Movil</li>
+              <li> Usuarios ilimitados</li>
+              <li> (5) almacenes</li>
+              <li>Generador de pagos</li>
+              <li>POS</li>
+              <li>Valorizacion de inventarios</li>
+              <li>Reportes detallados</li>
+              <li>Mas de 50 reportes</li>
+              </ul>
+              <a href="#" class="card-btn">
+                  Empieza ahora
+              </a>
+              <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+          </div>
+        </div>
+      </section>
   </section>
+
+
+  <!---SECTION -->
 
   <section class="trust">
     <div class="trust-desc">
