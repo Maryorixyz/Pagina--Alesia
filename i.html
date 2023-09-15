@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Estilos del contenedor Swiper */
+    .swiper-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Estilos de las diapositivas */
+    .swiper-slide {
+      width: calc(50% - 10px);
+      height: 200px;
+      margin-right: 20px;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilos para los iconos */
+    .swiper-slide i {
+      font-size: 48px;
+      color: #333;
+    }
+
+    /* Estilos de los botones de navegación */
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <i class="fa fa-home"></i>
+        <p>Inicio</p>
+      </div>
+      <div class="swiper-slide">
+        <i class="fa fa-search"></i>
+        <p>Buscar</p>
+      </div>
+      <div class="swiper-slide">
+        <i class="fa fa-shopping-cart"></i>
+        <p>Carrito</p>
+      </div>
+      <div class="swiper-slide">
+        <i class="fa fa-user"></i>
+        <p>Perfil</p>
+      </div>
+      <!-- Agrega más swiper-slide para cada icono -->
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
