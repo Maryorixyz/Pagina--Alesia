@@ -41,6 +41,24 @@ toggler.addEventListener("change", () => {
   }
 })
 
+//
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el => observer.observe(el)));
+
+
+//
+
 
 
 // // JavaScript para redirigir a WhatsApp cuando se hace clic en el botón
@@ -56,15 +74,15 @@ toggler.addEventListener("change", () => {
 
 // JavaScript para abrir WhatsApp en una nueva pestaña con mensajes diferentes
 document.getElementById("btn-wsp-1").addEventListener("click", function () {
-  abrirWhatsApp("917083624", "Hola, estoy interesado en el Plan de Servicio Emprendedor 😀");
+  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Emprendedor 😀");
 });
 
 document.getElementById("btn-wsp-2").addEventListener("click", function () {
-  abrirWhatsApp("917083624", "Hola, estoy interesado en el Plan de Servicio Empresario 😀😀");
+  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Empresario 😀😀");
 });
 
 document.getElementById("btn-wsp-3").addEventListener("click", function () {
-  abrirWhatsApp("917083624", "Hola, estoy interesado en el Plan de Servicio Ejecutivo 😀😀😀");
+  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Ejecutivo 😀😀😀");
 });
 
 function abrirWhatsApp(telefono, mensaje) {

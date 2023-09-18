@@ -22,11 +22,6 @@
 /*PARA EL BODY LETRA */
 
 body {
-  /* font-family: 'Anton', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Spinnaker', sans-serif; */
-  /* background-color: #F5F5F5; */
-  /* background-color: #F8F8FF; */
   background-color: #f1f1f1;
   font-family: 'Montserrat', sans-serif;
 }
@@ -41,11 +36,8 @@ body {
 
 .container {
   max-width: 1200px;
-  /*cuando llegue a ese numero, mi contenido se va a centrar*/
   margin: 0 auto;
-  /*tambien se puede utilizar esto, pero es una tecnica antigua*/
-  /* display: flex;
-  justify-content: center; */
+
 }
 
 /*--------*/
@@ -58,9 +50,6 @@ body {
   color: #f1f1f1;
 }
 
-/* .header-info span {
-  padding: 0 90px;
-} */
 
 .header-icon {
   display: flex;
@@ -76,18 +65,14 @@ body {
 .header-navbar .logo img {
 
   vertical-align: top;
-  /* width: 50px; */
   height: 85px;
   width: auto;
-  /* margin-right: 20px; */
-  /* float: left; */
 }
 
 .header-navbar {
   display: flex;
   justify-content: space-between;
   background-color: #F5F5F5;
-  /* background-color: rgb(255, 255, 255); */
   font-weight: 500;
   padding: 0 10%;
   align-items: center;
@@ -135,21 +120,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  /* width: 100vw; */
-  /* min-height: 70vh; */
-  /* display: flex;
-  align-items: center; */
 }
 
 .header-content {
   display: flex;
-  /* display: grid; */
+
   padding: 10px 10%;
   height: 100vh;
   width: 100%;
   position: relative;
   justify-content: space-between;
-  /* grid-template-columns: repeat(2, 1fr); */
   align-items: center;
   gap: 2rem;
   margin-bottom: 50px;
@@ -219,6 +199,26 @@ body {
   width: 100%;
 }
 
+.content-bnf .lop:nth-child(1) {
+  transition-delay: 200ms;
+}
+.content-bnf .lop:nth-child(2) {
+  transition-delay: 400ms;
+}
+.content-bnf .lop:nth-child(3) {
+  transition-delay: 600ms;
+}
+.content-bnf .lop:nth-child(4) {
+  transition-delay: 200ms;
+}
+.content-bnf .lop:nth-child(5) {
+  transition-delay: 400ms;
+}
+.content-bnf .lop:nth-child(6) {
+  transition-delay: 600ms;
+}  
+
+
 .content-bnf .bnf img {
   padding: 15px;
 }
@@ -229,8 +229,6 @@ body {
   border-image: linear-gradient(#008FFC,
       #7468FF,
       #00EA13);
-  /* width: 16em;
-  height: 6em; */
   position: relative;
   overflow: hidden;
   flex-wrap: nowrap;
@@ -242,13 +240,6 @@ body {
 
 }
 
-/* .prueba {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-} */
-
 .bnf2 {
   padding: 15px;
   align-items: center;
@@ -258,9 +249,7 @@ body {
 .content-bnf .bnf::before {
   content: '';
   position: absolute;
-  /* width: 110%; */
   width: 200%;
-  /* height: 350%; */
   height: 200%;
   background: conic-gradient(#008FFC,
       #7468FF,
@@ -280,8 +269,6 @@ body {
 
 
 .content-bnf .bnf:hover {
-  /* transform: translateY(-20px); */
-  /* background-color: #f1eeee62; */
   transform: scale(1.1);
 }
 
@@ -289,46 +276,6 @@ body {
   animation: spin 2s infinite linear;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* .content-bnf .bnf::before {
-  content: '';
-  position: absolute;
-  width: 110%;
-  height: 350%;
-  background: var(--conic-gradient);
-
-}
-
-.content-bnf .bnf::after {
-  content: '';
-  position: absolute;
-  background-color: #ffffff;
-  width: 96%;
-  height: 86%;
-  border-radius: 0.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content-bnf .bnf:hover{
-  transform: scale(1.1);
-}
-
-.content-bnf .bnf:hover::before{
-  animation: spin 1.5s infinite linear;
-}
-
-@keyframes spin {
-  to{
-    transform: rotate(360deg);
-  }
-} */
 .content-bnf .bnf h3 {
   font-size: 22px;
   font-weight: 500;
@@ -349,15 +296,12 @@ body {
   width: 100%;
   height: auto;
   overflow: hidden;
-  /* margin-bottom: 50px; */
-  /* height: 400px; */
 }
 
 #particles-js {
   background-color: #002072;
   width: 100%;
   height: 172px;
-  /* z-index: -1; */
 }
 
 #particles-js .multi-img .image-over {
@@ -387,7 +331,7 @@ body {
   background-color: #002072;
   width: 100%;
   height: 300px;
-  /* z-index: -1; */
+  
 }
 
 #particles-js2 .multi-img .image-over {
@@ -396,12 +340,12 @@ body {
 }
 
 #particles-js2 .pasrticle-info {
-  padding: 10px 10%;
+  padding: 70px 10%;
   position: absolute;
 }
 
 #particles-js2 p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   color: #FFFFFF;
 }
@@ -430,7 +374,6 @@ body {
 .multi-info {
   padding: 10px 10%;
   margin-bottom: 50px;
-  /* background-color: rgba(142, 173, 213, 0.25); */
 }
 
 .multi-info h2 {
@@ -488,12 +431,6 @@ padding-top: 90px;
 }
 /**/
 
-/* .sectt{
-  overflow-x: hidden;
-  min-height: 100vh;
-} */
-
-
 
 section .animate {
   transition: 1.5s;
@@ -505,12 +442,6 @@ section .animate {
   text-align: center;
   height: auto;
  
-  
-  /* min-height: 100vh; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 
 .sec-1 .animate {
@@ -529,10 +460,6 @@ section .animate {
   transform: translateX(0);
 }
 
-/* .pr {
-  margin-bottom: 50px;
-} */
-
 
 .img-carrosel {
   text-align: center;
@@ -540,10 +467,8 @@ section .animate {
   justify-content: center;
 }
 
-
 .content {
   padding: 10px 10%;
-  /* margin-bottom: 50px; */
   gap: 2rem;
   display: flex;
   align-items: center;
@@ -572,13 +497,12 @@ section .animate {
 
 .contact-des {
   display: flex;
-  /* background-color: #d8e6fd; */
   border-radius: 10px;
   padding: 10px;
 }
 
 .contact-des img {
-  /* width: auto; */
+
   height: fit-content;
 }
 
@@ -643,7 +567,6 @@ section .animate {
   height: 40px;
   line-height: 45px;
   margin: 10px;
-  /* background-color: #00EA13; */
   text-align: center;
   transition: all 300ms ease;
 }
@@ -690,7 +613,6 @@ section .animate {
   height: 40px;
   line-height: 45px;
   margin: 10px;
-  /* background-color: #00EA13; */
   text-align: center;
   transition: all 300ms ease;
 }
@@ -738,8 +660,6 @@ section .animate {
 
 .container {
   text-align: center;
-  /* width: 1100px;
-  height: 60%; */
   padding: 10px;
   margin-bottom: 50px;
 }
@@ -771,7 +691,9 @@ section .animate {
     -moz-appearance: none;
     width: 50px;
     height: 25px;
-    background: linear-gradient(75deg, #008FFC,#7468FF, #00EA13);
+    /* background: linear-gradient(75deg, #008FFC,#7468FF, #00EA13); */
+    background-color: white;
+
     border-radius: 25px;
     margin: 0 1rem;
     position: relative;
@@ -781,7 +703,9 @@ section .animate {
     content: "";
     width: 16px;
     height: 16px;
-    background-color: white;
+    /* background-color: white; */
+    background: linear-gradient(75deg, #008FFC,#7468FF, #00EA13);
+
     position: absolute;
     border-radius: 50%;
     top:50%;
@@ -808,9 +732,6 @@ section .animate {
 }
 
 
-/* .card-plan {
-    padding: 2rem 2rem 0 2rem;
-} */
 .card-plan ul li {
     font-size: 17px;
     font-weight: 500;
@@ -824,9 +745,7 @@ section .animate {
    height: 720px;
    width: 32%;
    background-color: #f5f5f5;
-   /* border: 3px solid #191b1d; */
    border-radius: 15px;
-   /* padding: 2rem; */
    text-align: center;
 }
 
@@ -853,9 +772,6 @@ h2>span{
 }
 
 
-.card .card-price{
-    /* margin-bottom: 2rem; */
-}
 .card ul{
     text-align: left;
     font-size: 0.9rem;
@@ -871,34 +787,26 @@ h2>span{
 
 }
 
-/* .card ul li{
-    margin-bottom: 0.5rem;
-} */
-
 /**/
 
 .elemento-con-degradado {
     /* Define el color de fondo inicial */
-      /* background-color: #F1F1F1; */
-      background-color: #F1F1F1;
+  background-color: #F1F1F1;
     
       /* Crea el degradado utilizando linear-gradient */
-      /* background-image: linear-gradient(to right, #F1F1F1, #008FFC), linear-gradient(to left, #F1F1F1, #008FFC); */
-      /* background-image: linear-gradient(to bottom, #3498db, #e74c3c); */
-      background-image: linear-gradient(to top, #F1F1F1 0%, #8EADD5 20%, #F1F1F1 110%);
+  background-image: linear-gradient(to top, #F1F1F1 0%, #8EADD5 20%, #F1F1F1 110%);
       
     
       /* Puedes ajustar la dirección del degradado cambiando 'to bottom' */
       /* 'to bottom' significa que el degradado va de arriba hacia abajo */
   background-size: 100% 100%;
-    background-position: bottom;
+  background-position: bottom;
       /* Establece el tamaño del degradado si lo deseas (opcional) */
       /* background-size: cover; */
     
       /* Añade otros estilos de fondo si es necesario */
   background-repeat: no-repeat;
-    background-attachment: fixed;
-      /* ...otros estilos... */
+  background-attachment: fixed;
 }
 
 /**/
@@ -924,19 +832,42 @@ h2>span{
   cursor: pointer;
 }
 
+/**/
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 /**/
 
 .card-btn{
     margin-top: 1rem;
     width: 100%;
-    background: #002072;
+    /* background: #002072; */
+    background:  #00bb2d;
     border: 0.5px solid #ffffff;
     color:white;
     font-size: 17px;
     font-weight: 500;
     padding: 1rem;
     border-radius: 15px;
+}
+
+.btn1 {
+  margin-top: 87px;
+}
+
+.btn3 {
+  margin-top: 19px;
 }
 
 .card .card-btn:hover,
@@ -987,7 +918,11 @@ h2>span{
 
 
 /**/
-
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes gradient {
   50% {

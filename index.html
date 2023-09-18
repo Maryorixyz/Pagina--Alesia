@@ -10,7 +10,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <title>Document</title>
+  <link rel="icon" type="png" href="/Imagenes/logo.png">
+  <title>Alesia - Facturacion Electronica</title>
 </head>
 
 <body>
@@ -65,7 +66,7 @@
   <!-- CONTENIDO PRINCIAPL -->
 
   <section class="content-principal" id="id-beneficio">
-    <div class="content-info">
+    <div class="content-info hidden">
       <h2>Beneficios</h2>
       <p>El sistema de Alesia es seguro, aporta a la productividad de tu empresa, evita la pérdida de documentos y
         permite
@@ -74,7 +75,7 @@
     </div>
     <div class="content-bnf">
 
-      <div class="bnf">
+      <div class="bnf lop hidden ">
         <div class="bnf2">
           <img src="/Imagenes/lapiz1.svg" alt="">
           <h3>Personaliza tus Facturas</h3>
@@ -82,7 +83,7 @@
         </div>
       </div>
 
-      <div class="bnf">
+      <div class="bnf lop hidden">
         <div class="bnf2">
           <img src="/Imagenes/certificado.svg" alt="">
           <h3>Certificado Digital</h3>
@@ -92,14 +93,14 @@
         </div>
       </div>
 
-      <div class="bnf">
+      <div class="bnf lop hidden">
         <div class="bnf2">
           <img src="/Imagenes/person.svg" alt="">
           <h3>Soporte</h3>
           <p>Soporte standart en días hábiles. Monitoreo constante.</p>
         </div>
       </div>
-      <div class="bnf">
+      <div class="bnf lop hidden">
         <div class="bnf2">
           <img src="/Imagenes/time.svg" alt="">
           <h3>Homologación Exonerada</h3>
@@ -108,7 +109,7 @@
             tiempos y procedimientos.</p>
         </div>
       </div>
-      <div class="bnf">
+      <div class="bnf lop hidden">
         <div class="bnf2">
           <img src="/Imagenes/candado.svg" alt="">
           <h3>Seguridad SSL EV</h3>
@@ -117,7 +118,7 @@
             información privada.</p>
         </div>
       </div>
-      <div class="bnf">
+      <div class="bnf lop hidden">
         <div class="bnf2">
           <img src="/Imagenes/mundo.svg" alt="">
           <h3>Versión Online </h3>
@@ -127,14 +128,7 @@
     </div>
   </section>
 
-  <!-- <section class="info">
-        <div class="info-div">
-          <img src="/Imagenes/Happy.svg" alt="">
-          <p>Servicio autorizado por la <span>SUNAT</span> para emitir documentos electrónicos, trabajamos con desarrolladores de software
-            y empresas que necesitan ahorrar tiempo y recursos.</p>
-        </div>
-      </section> -->
-    <section class="particle-pr">
+  <section class="particle-pr">
       <div id="particles-js">
         <div class="pasrticle-info">
           <img src="/Imagenes/Happy.svg" alt="">
@@ -144,12 +138,6 @@
         </div>
       </div>
     </section>
-
-  <!-- BODY -->
-
-  <!-- <section class="sec-1 show-animate sectt">
-    <h2 class="animate">MULTIII</h2>
-  </section> -->
 
   <section class="multi-info sec-1 show-animate elemento-con-degradado mayo">
     <h2 class="animate">Multidispositivos</h2>
@@ -186,9 +174,12 @@
                   <li>(200) comprobantes</li>
                   <li>Soporte estándar</li>
               </ul>
-              <a href="#" class="card-btn" id="btn-wsp-1">
-                  Empieza ahora
-              </a>
+              <div class="btn1">
+                <a href="#" class="card-btn " id="btn-wsp-1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Empieza ahora
+                </a>
+              </div>
               <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
           </div>
         </div>
@@ -212,10 +203,12 @@
               <li>Gestión de compras</li>
               <li>Y más</li>
               </ul>
-              <a href="#" class="card-btn" id="btn-wsp-2">
-                  Empieza ahora
-              </a>
-              <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+              <div>
+                <a href="#" class="card-btn" id="btn-wsp-2">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Empieza ahora
+                </a>
+              </div>
           </div>
         </div>
 
@@ -237,10 +230,12 @@
               <li>Reportes detallados</li>
               <li>Mas de 50 reportes</li>
               </ul>
-              <a href="#" class="card-btn" id="btn-wsp-3">
+              <div class="btn3">
+                <a href="#" class="card-btn" id="btn-wsp-3">
+                  <i class="fa-brands fa-whatsapp"></i>
                   Empieza ahora
-              </a>
-              <!-- <button type="button" class="card-btn"> Empieza ahora</button> -->
+                </a>
+              </div>
           </div>
         </div>
       </section>
@@ -263,7 +258,7 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide img-carrosel"><img src="/Imagenes/Ellipse 6.png" alt=""></div>
+        <div class="swiper-slide img-carrosel"><img src="/Imagenes/Ellipse 5.png" alt=""></div>
         <div class="swiper-slide img-carrosel"><img src="/Imagenes/Ellipse 7.png" alt=""></div>
         <div class="swiper-slide img-carrosel"><img src="/Imagenes/Ellipse 8.png" alt=""></div>
         <div class="swiper-slide img-carrosel"><img src="/Imagenes/Ellipse 9.png" alt=""></div>
@@ -351,21 +346,21 @@
             <h3>Línea Directa</h3>
             <p>062-612737</p>
             <h3>Email</h3>
-            <p>alesiafacturacion@gmail.com</p>
+            <p>ventas@alesiacompany.com</p>
           </div>
           <div class="box">
             <h3>Síguenos</h3>
             <div class="red-social">
-              <a href="https://colorhunt.co/palettes/grey" target="_blank">
+              <a href="https://m.facebook.com/AlesiaCompany/" target="_blank">
                 <img src="/Imagenes/ic_baseline-facebook.svg" alt="">
               </a>
-              <a href="red-social">
+              <a href="https://instagram.com/alesiafacturacion?igshid=MzRlODBiNWFlZA==" target="_blank">
                 <img src="/Imagenes/ri_instagram-fill.svg" alt="">
               </a>
-              <a href="red-social">
+              <a href="https://youtube.com/@alesia-facturacionelectron1885?si=OY14Hwpk5QbAbRKg" target="_blank">
                 <img src="/Imagenes/mdi_youtube.svg" alt="">
               </a>
-              <a href="red-social">
+              <a href="https://www.tiktok.com/@alesiafacturacion?_t=8fnOaLwXfML&_r=1" target="_blank">
                 <img src="/Imagenes/mingcute_tiktok-fill.svg" alt="">
               </a>
             </div>
@@ -380,7 +375,7 @@
   </footer>
 
   <div class="whatsapp-button" id="whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=917083624&text=Hola,%20¿en%20qué%20puedo%20ayudarte?%20😊"
+    <a href="https://api.whatsapp.com/send?phone=978346601&text=Hola,%20¿en%20qué%20puedo%20ayudarte?%20😊"
       target="_blank">
       <img src="/Imagenes/logos_whatsapp-icon.png" alt="WhatsApp">
     </a>
@@ -391,16 +386,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
-
-  <!--*********-->
-
-
-
-  <!-- Initialize Swiper -->
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 
   <script src="particles.min.js"></script>
   <script src="particle.js"></script>
