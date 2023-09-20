@@ -94,22 +94,27 @@ nav {
   align-items: center;
 }
 
-.bar-btn {
+/* .bar-btn {
   font-size: 25px;
   color: #2a0404;
   margin-right: 20px;
   cursor: pointer;
+} */
+
+.bar-btn i{
+  display: none;
+  
 }
 
-.navbar-list {
+/* .navbar-list {
   position: fixed;
   width: 100%;
-  height: 0vh; /*LUEGO CAMBIO PARA EL MOBILE*/
-  top: 100px;
+  height: 0vh; LUEGO CAMBIO PARA EL MOBILE */
+  /* top: 100px; */
   /* z-index: 9999; */
-  background: rgb(21, 65, 185);
+  /* background: rgb(21, 65, 185);
   text-align: start;
-  padding-left:30px ;
+  padding-left:30px;
   transition: all .5s;
 }
 
@@ -121,23 +126,23 @@ nav {
 }
 
 .navbar-list li a {
-  color: #F5F5F5;
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
-}
+} */
 
-#check {
-  display: none;
-}
+              /* #check {
+                display: none;
+              }
 
-#check:checked ~ .navbar-list {
-  height: 100vh;
-}
+              #check:checked ~ .navbar-list {
+                height: 100vh;
+              }
 
-#check:checked ~ .navbar-list li {
-  display: block;
-}
-/* .navbar-list {
+              #check:checked ~ .navbar-list li {
+                display: block;
+              } */
+.navbar-list {
   position: relative;
   display: flex;
 }
@@ -151,9 +156,9 @@ nav {
   font-size: 18px;
   padding: 10px;
   font-weight: 700;
-  display: block; */
+  display: block; 
   /*OCUPA TODO EL ESPACIO DISPONIBLE DE SU ELEMENTO CONTENEDRO*/
-  /* letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .navbar-list li a::after {
@@ -172,7 +177,7 @@ nav {
 
 .navbar-list li a:hover {
   color: #002072;
-} */
+}
 
 /*----------------------*/
 
@@ -889,12 +894,21 @@ h2>span {
 
 /*QUERY*/
 
-@media screen and (min-width:767px) {
-  nav {
-    height: 100px;
+@media screen and (max-width:767px) {
+
+  .navbar-list {
+    display: none;
   }
   .bar-btn{
-    display: none;
+    background-color: red;
+    font-size: 25px;
+    color: #2a0404;
+    margin-right: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  /* nav {
+    height: 100px;
   }
 
   .navbar-list {
@@ -916,7 +930,7 @@ h2>span {
 
   .navbar-list li a {
     color: #020202;
-  }
+  } */
 }
 
 /* 
