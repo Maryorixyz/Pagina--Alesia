@@ -91,3 +91,28 @@ function abrirWhatsApp(telefono, mensaje) {
   window.open(url, "_blank");
 }
 
+//*** */
+window.addEventListener("scroll", function () {
+  var divSuperior = document.getElementById("div-Superior");
+  var navbar = document.getElementById("header-navbar");
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > divSuperior.offsetHeight) {
+    navbar.style.position = "fixed";
+    navbar.style.top = "0";
+  } else {
+    navbar.style.position = "static";
+  }
+});
+
+window.addEventListener("scroll", function () {
+  var divSuperior = document.getElementById("div-Superior");
+  var navbar = document.getElementById("header-navbar");
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > divSuperior.offsetHeight) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+});
