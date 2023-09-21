@@ -57,21 +57,6 @@ toggler.addEventListener("change", () => {
   hiddenElements.forEach((el => observer.observe(el)));
 
 
-//
-
-
-
-// // JavaScript para redirigir a WhatsApp cuando se hace clic en el botón
-// document.getElementById("enlace-whatsapp").addEventListener("click", function () {
-//   var telefono = "917083624"; // Reemplaza esto con tu número de WhatsApp
-//   var mensaje = "Hola, estoy interesado en el Plan de Servicio Emprendedor"; // Mensaje predeterminado
-//   var url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
-
-//   // window.location.href = url;
-//   window.open(url, "_blank");
-// });
-
-
 // JavaScript para abrir WhatsApp en una nueva pestaña con mensajes diferentes
 document.getElementById("btn-wsp-1").addEventListener("click", function () {
   abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Emprendedor 😀");
@@ -115,4 +100,18 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed");
   }
+});
+
+const botonmenu = document.querySelector(".bar-btn");
+const listamenu = document.querySelector(".navbar-list");
+const enlacesMenu = document.querySelectorAll(".navbar-list li a");
+
+botonmenu.addEventListener("click", () => {
+  listamenu.classList.toggle("aparecemenu");
+})
+
+enlacesMenu.forEach(enlace => {
+  enlace.addEventListener("click", () => {
+    listamenu.classList.remove("aparecemenu");
+  });
 });
