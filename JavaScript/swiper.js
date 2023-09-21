@@ -25,3 +25,12 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+
+if (window.matchMedia('(max-width:768px)').matches) {
+  var swiperMobile = new Swiper('.swiper', {
+    slidesPerView: 5, // Cambia a 1 slide por vista en dispositivos móviles
+    spaceBetween: 20, // Cambia el espacio entre slides en dispositivos móviles
+    // Otras opciones específicas para dispositivos móviles
+  });
+}
