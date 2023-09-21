@@ -34,25 +34,6 @@ toggler.addEventListener("change", () => {
   hiddenElements.forEach((el => observer.observe(el)));
 
 
-// JavaScript para abrir WhatsApp en una nueva pestaña con mensajes diferentes
-document.getElementById("btn-wsp-1").addEventListener("click", function () {
-  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Emprendedor 😀");
-});
-
-document.getElementById("btn-wsp-2").addEventListener("click", function () {
-  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Empresario 😀😀");
-});
-
-document.getElementById("btn-wsp-3").addEventListener("click", function () {
-  abrirWhatsApp("978346601", "Hola, estoy interesado en el Plan de Servicio Ejecutivo 😀😀😀");
-});
-
-function abrirWhatsApp(telefono, mensaje) {
-  var url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
-
-  window.open(url, "_blank");
-}
-
 //***NAVBAR FIXED */
 window.addEventListener("scroll", function () {
   var divSuperior = document.getElementById("div-Superior");

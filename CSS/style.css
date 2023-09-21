@@ -203,6 +203,7 @@ button:hover div:last-child {
 .section-1-text h4 {
   font-size: 30px;
   font-weight: 500;
+  text-shadow: 0px 3px 5px rgba(5, 5, 5, 0.911);
 }
 
 .section-1-text h1 {
@@ -1009,13 +1010,17 @@ h2>span {
 
   .header-info{
     padding: 3vw 9vw;
+    flex-direction: column;
+  }
+  .header-icon {
+    margin-bottom: 4px;
   }
 
   .header-icon span {
     font-size: 14px;
   }
   .navbar-list {
-    top: 146px;
+    top: 164px;
     /* top: 100%; */
     width: 50%;
   }
@@ -1033,6 +1038,10 @@ h2>span {
     color: #ffffff;
     text-shadow: 0px 3px 5px rgba(5, 5, 5, 0.911);
     margin: 10px 0 10px 0;
+  }
+
+  #particles-js {
+      height: 265px;
   }
 
   .contact h3 {
